@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwcvewmvyma2w"]
+
+[ext_resource type="Texture2D" uid="uid://bnjr7ta6v7ndm" path="res://sprites/Arthur.png" id="1_lq47v"]
+[ext_resource type="Script" path="res://scripts/spear.gd" id="2_soi6e"]
+[ext_resource type="PackedScene" uid="uid://q7vfxrlr27ed" path="res://scenes/enemy_killzone.tscn" id="3_8gqub"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f2uxh"]
+size = Vector2(28, 6)
+
+[node name="Spear" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("2_soi6e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_f2uxh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_lq47v")
+region_enabled = true
+region_rect = Rect2(12, 323, 29, 6)
+
+[node name="EnemyKillzone" parent="." instance=ExtResource("3_8gqub")]
+collision_mask = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EnemyKillzone"]
+shape = SubResource("RectangleShape2D_f2uxh")
+
+[connection signal="onHit" from="EnemyKillzone" to="." method="_on_enemy_killzone_on_hit"]

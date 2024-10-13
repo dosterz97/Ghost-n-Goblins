@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://q7vfxrlr27ed"]
+
+[ext_resource type="Script" path="res://scripts/enemy_killzone.gd" id="1_mfs36"]
+
+[node name="EnemyKillzone" type="Area2D"]
+collision_mask = 4
+script = ExtResource("1_mfs36")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

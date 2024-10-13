@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://jamft1w5ksai"
+path="res://.godot/imported/ENEMYDEATH.wav-d463fc71582ddc7772686db6351d1bfe.sample"
+
+[deps]
+
+source_file="res://sprites/Arcade - Ghosts n Goblins - Sound Effects/ENEMYDEATH.wav"
+dest_files=["res://.godot/imported/ENEMYDEATH.wav-d463fc71582ddc7772686db6351d1bfe.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

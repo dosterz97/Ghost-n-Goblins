@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bui2xdmw5q8vy"
+path="res://.godot/imported/ASTAROTHDEATH1.wav-90cf430810c906b7a65a1272f4ab1e56.sample"
+
+[deps]
+
+source_file="res://sprites/Arcade - Ghosts n Goblins - Sound Effects/ASTAROTHDEATH1.wav"
+dest_files=["res://.godot/imported/ASTAROTHDEATH1.wav-90cf430810c906b7a65a1272f4ab1e56.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
